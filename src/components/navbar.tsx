@@ -1,13 +1,5 @@
-import { Box, Flex, Spacer } from '@chakra-ui/react';
-
-const sections = [
-  'Home',
-  'Projects',
-  'Skills',
-  'Experience',
-  'Education',
-  'Contact',
-];
+import { Box, Flex } from '@chakra-ui/react';
+import { sectionsNames } from '../constants';
 
 const Navbar = () => {
   return (
@@ -26,15 +18,15 @@ const Navbar = () => {
       transform="translateX(-50%)"
       width="auto"
     >
-      {sections.map((section, index) => (
+      {sectionsNames.map((section, index) => (
         <Box
           key={index}
-          padding="0.25rem 0.75rem" // Зменшені відступи
-          fontSize="0.875rem" // Зменшений розмір шрифту
+          padding="0.25rem 0.75rem"
+          fontSize="0.875rem"
           borderRadius="full"
           _hover={{ bg: 'gray.700', cursor: 'pointer' }}
           transition="background-color 0.2s ease"
-          margin="0 0.5rem" // Зменшена відстань між секціями
+          margin="0 0.5rem"
         >
           {section}
         </Box>
