@@ -1,11 +1,9 @@
+import Navbar from './components/navbar';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </header>
+    <div>
+      <Navbar />
     </div>
   );
 }
