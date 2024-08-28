@@ -1,11 +1,11 @@
 import Home from './home';
-import SkillsSection from './skills';
+import Skills from './skills';
 
 const Sections = () => {
   return (
     <>
       <Home />
-      <SkillsSection />
+      <Skills />
     </>
   );
 };
