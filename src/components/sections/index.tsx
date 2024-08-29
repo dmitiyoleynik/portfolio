@@ -1,4 +1,5 @@
 import Home from './home';
+import Projects from './projects';
 import Skills from './skills';
 
 const Sections = () => {
@@ -6,6 +7,7 @@ const Sections = () => {
     <>
       <Home />
       <Skills />
+      <Projects />
     </>
   );
 };

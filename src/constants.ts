@@ -27,6 +27,7 @@ import { ReactComponent as Vite } from './assets/vite.svg';
 import { ReactComponent as Capacitor } from './assets/capacitor.svg';
 import { ReactComponent as Git } from './assets/git.svg';
 import { ReactComponent as NestJS } from './assets/nest.svg';
+import tmpPicture from './assets/tmp.webp';
 
 export const skillsIcons = [
   { component: JavaScript, label: 'JavaScript' },
@@ -59,7 +60,35 @@ export const skillsIcons = [
   { component: PostgreSQL, label: 'PostgreSQL' },
   { component: StyledComponents, label: 'Styled Components' },
 ];
-
+export const projects = [
+  {
+    name: 'Portfolio Website',
+    techStack: [ReactJS, TypeScript, NodeJS, Docker],
+    description:
+      'A personal portfolio website to showcase my projects, skills, and experience. Built with React and TypeScript on the frontend, and Node.js on the backend. The site is containerized using Docker for easy deployment.',
+    demoLink: 'https://yourportfolio.com',
+    githubLink: 'https://github.com/yourusername/portfolio-website',
+    screenshot: tmpPicture,
+  },
+  {
+    name: 'E-commerce Platform',
+    techStack: [ReactJS, NodeJS, GraphQL],
+    description:
+      'A full-featured e-commerce platform that includes product listings, a shopping cart, and payment integration. The frontend is built with React and GraphQL, while the backend uses Node.js and MongoDB for data storage.',
+    demoLink: 'https://myecommerce.com',
+    githubLink: 'https://github.com/yourusername/ecommerce-platform',
+    screenshot: tmpPicture,
+  },
+  {
+    name: 'Social Media App',
+    techStack: [ReactJS, TypeScript, NodeJS, Docker],
+    description:
+      'A social media application where users can create profiles, post updates, and interact with others. Built with React and TypeScript for the frontend, Node.js and MongoDB for the backend, and Docker for deployment.',
+    demoLink: 'https://mysocialapp.com',
+    githubLink: 'https://github.com/yourusername/social-media-app',
+    screenshot: 'https://mysocialapp.com/screenshot.png',
+  },
+];
 export const sectionsNames = [
   'Home',
   'Skills',

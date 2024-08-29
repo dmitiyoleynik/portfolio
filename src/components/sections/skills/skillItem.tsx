@@ -1,8 +1,9 @@
 import { Box, Icon, Text } from '@chakra-ui/react';
+import { SVG } from '../../../types';
 
 interface SkillItemProps {
   label: string;
-  component: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+  component: SVG;
 }
 
 const SkillItem = ({ label, component }: SkillItemProps) => {
