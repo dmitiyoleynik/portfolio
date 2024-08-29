@@ -1,7 +1,10 @@
 import { Box, Flex } from '@chakra-ui/react';
 import { sectionsNames } from '../constants';
+import useIsSmallScreen from '../hooks/useIsSmallScreen';
 
 const Navbar = () => {
+  const isSmallScreen = useIsSmallScreen();
+
   return (
     <Flex
       as="nav"
@@ -10,14 +13,15 @@ const Navbar = () => {
       align="center"
       justify="center"
       padding="0.5rem"
-      borderRadius="full"
+      borderRadius={isSmallScreen ? 'none' : 'full'}
       boxShadow="md"
       position="fixed"
-      top="1rem"
+      top={isSmallScreen ? 0 : '1rem'}
       left="50%"
       transform="translateX(-50%)"
-      width="auto"
+      width={isSmallScreen ? '100%' : 'auto'}
       zIndex="1000"
+      wrap={isSmallScreen ? 'wrap' : 'nowrap'}
     >
       {sectionsNames.map((section, index) => (
         <Box

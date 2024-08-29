@@ -1,3 +1,4 @@
+import useIsSmallScreen from '../../../hooks/useIsSmallScreen';
 import { SVG } from '../../../types';
 import {
   Box,
@@ -33,7 +34,7 @@ const ProjectItem = ({
   githubLink,
   screenshot,
 }: ProjectItemProps) => {
-  const isSmallScreen = useBreakpointValue({ base: true, md: false });
+  const isSmallScreen = useIsSmallScreen();
   return (
     <Card
       bg="gray.700"
