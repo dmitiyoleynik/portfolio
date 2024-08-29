@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 import { FaBriefcase } from 'react-icons/fa';
 import {
   VerticalTimeline,
@@ -6,7 +6,7 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-const data: CompanyProps[] = [
+const dataForExp: CompanyProps[] = [
   {
     position: 'Frontend & Mobile dev',
     company: 'Darly Solutions',
@@ -39,9 +39,18 @@ interface CompanyProps {
 
 const Experience = () => {
   return (
-    <Box bgColor={'gray.800'} py={10}>
+    <Flex
+      as="section"
+      bg="gray.800"
+      color="white"
+      align="center"
+      justify="center"
+      direction="column"
+      textAlign="center"
+    >
+      <Heading marginBottom="2rem">My Experience</Heading>
       <VerticalTimeline>
-        {data.map(({ position, company, description, range }) => (
+        {dataForExp.map(({ position, company, description, range }) => (
           <VerticalTimelineElement
             key={company}
             className="vertical-timeline-element--work"
@@ -57,7 +66,7 @@ const Experience = () => {
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
-    </Box>
+    </Flex>
   );
 };
 
