@@ -17,6 +17,7 @@ const Navbar = () => {
       left="50%"
       transform="translateX(-50%)"
       width="auto"
+      zIndex="1000"
     >
       {sectionsNames.map((section, index) => (
         <Box
