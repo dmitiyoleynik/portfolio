@@ -86,7 +86,7 @@ export const projects = [
       'A social media application where users can create profiles, post updates, and interact with others. Built with React and TypeScript for the frontend, Node.js and MongoDB for the backend, and Docker for deployment.',
     demoLink: 'https://mysocialapp.com',
     githubLink: 'https://github.com/yourusername/social-media-app',
-    screenshot: 'https://mysocialapp.com/screenshot.png',
+    screenshot: tmpPicture,
   },
 ];
 export const sectionsNames = [

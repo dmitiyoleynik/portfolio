@@ -15,7 +15,7 @@ const Projects = () => {
       textAlign="center"
     >
       <Heading padding="4rem">My Projects</Heading>
-      <Flex width="100%" direction="column" gap="4rem">
+      <Flex width="100%" direction="column" gap="4rem" paddingBottom="2rem">
         {projects.map(ProjectItem)}
       </Flex>
     </Flex>

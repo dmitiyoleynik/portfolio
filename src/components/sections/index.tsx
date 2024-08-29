@@ -1,3 +1,4 @@
+import Experience from './experience';
 import Home from './home';
 import Projects from './projects';
 import Skills from './skills';
@@ -8,6 +9,7 @@ const Sections = () => {
       <Home />
       <Skills />
       <Projects />
+      <Experience />
     </>
   );
 };
