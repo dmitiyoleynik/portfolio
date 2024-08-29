@@ -1,3 +1,4 @@
+import withAppear from '../../../HOC/withAppear';
 import useIsSmallScreen from '../../../hooks/useIsSmallScreen';
 import { SVG } from '../../../types';
 import {
@@ -115,4 +116,4 @@ const ProjectItem = ({
   );
 };
 
-export default ProjectItem;
+export default withAppear(ProjectItem);

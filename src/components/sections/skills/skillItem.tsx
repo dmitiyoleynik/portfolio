@@ -1,5 +1,6 @@
 import { Box, Icon, Text } from '@chakra-ui/react';
 import { SVG } from '../../../types';
+import withAppear from '../../../HOC/withAppear';
 
 interface SkillItemProps {
   label: string;
@@ -26,4 +27,4 @@ const SkillItem = ({ label, component }: SkillItemProps) => {
   );
 };
 
-export default SkillItem;
+export default withAppear(SkillItem);
