@@ -13,6 +13,7 @@ import {
   HStack,
   Stack,
   Flex,
+  useBreakpointValue,
 } from '@chakra-ui/react';
 
 interface ProjectItemProps {
@@ -32,6 +33,7 @@ const ProjectItem = ({
   githubLink,
   screenshot,
 }: ProjectItemProps) => {
+  const isSmallScreen = useBreakpointValue({ base: true, md: false });
   return (
     <Card
       bg="gray.700"
@@ -40,7 +42,7 @@ const ProjectItem = ({
       overflow="hidden"
       boxShadow="lg"
       direction="row"
-      margin="0 6rem"
+      mx={{ base: '2rem', md: '6rem' }}
       height="auto"
     >
       <CardBody
@@ -81,7 +83,7 @@ const ProjectItem = ({
                 bg: 'blue.500',
                 borderColor: 'blue.500',
                 color: 'white',
-              }} // Ховер для "Demo" кнопки
+              }}
             >
               Demo
             </Button>
@@ -91,14 +93,14 @@ const ProjectItem = ({
               href={githubLink}
               colorScheme="gray"
               isExternal
-              _hover={{ bg: 'gray.600', color: 'white' }} // Ховер для "GitHub" кнопки
+              _hover={{ bg: 'gray.600', color: 'white' }}
             >
               GitHub
             </Button>
           </HStack>
         </Flex>
       </CardBody>
-      {screenshot && (
+      {screenshot && !isSmallScreen && (
         <Image
           src={screenshot}
           alt={`${name} screenshot`}
