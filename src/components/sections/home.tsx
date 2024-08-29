@@ -30,10 +30,10 @@ const Home = () => {
           name="Dmytro Oliinyk"
           src={avatar}
         />
-        <Heading as="h1" size="2xl" marginBottom="1rem">
+        <Heading as="h1" size="2xl" marginBottom="1rem" color="gray.200">
           Hi! I am Dmytro Oliinyk
         </Heading>
-        <Text fontSize="xl" marginBottom="2rem">
+        <Text fontSize="xl" marginBottom="2rem" color="gray.200">
           Full Stack & Frontend Developer | React, Redux, TypeScript, Node.js
         </Text>
       </Box>

@@ -50,7 +50,7 @@ const ProjectItem = ({
         flex="1"
       >
         <Flex direction="column" align="start" flex="1">
-          <Heading size="lg" marginBottom="1rem">
+          <Heading size="lg" marginBottom="1rem" color="gray.200">
             {name}
           </Heading>
           <HStack align="end" spacing="1rem" marginBottom="1rem">
@@ -61,14 +61,38 @@ const ProjectItem = ({
               <Icon as={component} key={index} boxSize="1.5rem" />
             ))}
           </HStack>
-          <Text textAlign="left" fontSize="md" marginBottom="1rem">
+          <Text
+            textAlign="left"
+            fontSize="md"
+            marginBottom="1rem"
+            color="gray.200"
+          >
             {description}
           </Text>
           <HStack spacing="1rem" justifySelf="end" marginTop="auto">
-            <Button as={Link} href={demoLink} colorScheme="blue" isExternal>
+            <Button
+              as={Link}
+              href={demoLink}
+              colorScheme="gray"
+              color="whiteAlpha.800"
+              variant="outline"
+              isExternal
+              _hover={{
+                bg: 'blue.500',
+                borderColor: 'blue.500',
+                color: 'white',
+              }} // Ховер для "Demo" кнопки
+            >
               Demo
             </Button>
-            <Button as={Link} href={githubLink} colorScheme="gray" isExternal>
+
+            <Button
+              as={Link}
+              href={githubLink}
+              colorScheme="gray"
+              isExternal
+              _hover={{ bg: 'gray.600', color: 'white' }} // Ховер для "GitHub" кнопки
+            >
               GitHub
             </Button>
           </HStack>

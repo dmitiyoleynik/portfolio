@@ -48,7 +48,9 @@ const Experience = () => {
       direction="column"
       textAlign="center"
     >
-      <Heading marginBottom="2rem">My Experience</Heading>
+      <Heading marginBottom="2rem" color="gray.200">
+        My Experience
+      </Heading>
       <VerticalTimeline>
         {dataForExp.map(({ position, company, description, range }) => (
           <VerticalTimelineElement

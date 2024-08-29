@@ -78,7 +78,7 @@ const Education = () => {
         textAlign="center"
         mt={10}
         mb={6}
-        color="white"
+        color="gray.200"
       >
         Education
       </Heading>

@@ -13,11 +13,11 @@ const ContactSection = () => {
   return (
     <Box bg="gray.900" color="white" py={16} px={8}>
       <VStack spacing={10} maxW="800px" mx="auto">
-        <Heading as="h2" size="2xl" textAlign="center">
+        <Heading as="h2" size="2xl" textAlign="center" color="gray.200">
           Get in Touch
         </Heading>
 
-        <Text fontSize="lg" textAlign="center" color="gray.400">
+        <Text fontSize="lg" textAlign="center" color="gray.200">
           I'd be happy to connect! If you have any questions or proposals, don't
           hesitate to reach out. Always ready to discuss new ideas!
         </Text>

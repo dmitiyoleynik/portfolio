@@ -15,7 +15,10 @@ const Skills = () => {
       textAlign="center"
     >
       <Box>
-        <Heading padding={{ base: '8rem 2rem 2rem 2rem', xl: '2rem' }}>
+        <Heading
+          padding={{ base: '8rem 2rem 2rem 2rem', xl: '2rem' }}
+          color="gray.200"
+        >
           My Skills
         </Heading>
         <Flex
