@@ -12,7 +12,7 @@ import { Element } from 'react-scroll';
 const Contact = () => {
   return (
     <Element name="Contact">
-      <Box height="100%" bg="gray.800" color="white" p="4rem 0 16rem 0" px={8}>
+      <Box bg="gray.800" color="white" p="4rem 0 16rem 0" px={8}>
         <VStack spacing={10} maxW="800px" mx="auto">
           <Heading as="h2" size="2xl" textAlign="center" color="gray.200">
             Get in Touch

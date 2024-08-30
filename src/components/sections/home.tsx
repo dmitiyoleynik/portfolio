@@ -9,7 +9,7 @@ const Home = () => {
     <Element name="Home">
       <Flex
         as="section"
-        padding={{ base: '12rem 0 4rem 0' }}
+        padding="12rem 0 4rem 0"
         bg="gray.800"
         color="white"
         align="center"
@@ -20,7 +20,7 @@ const Home = () => {
         <CustomAvatar
           marginBottom="2rem"
           name="Dmytro Oliinyk"
-          size={'12rem'}
+          size="12rem"
           src={avatar}
         />
         <Heading as="h1" size="2xl" marginBottom="1rem" color="gray.200">

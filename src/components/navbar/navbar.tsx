@@ -30,7 +30,7 @@ const Navbar = () => {
           to={sectionName}
           smooth={true}
           spy={true}
-          offset={-100}
+          offset={-150}
           duration={1000}
           activeClass="active"
         >

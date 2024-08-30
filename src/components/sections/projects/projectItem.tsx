@@ -1,22 +1,18 @@
+import {
+  Button,
+  Card,
+  CardBody,
+  Flex,
+  Heading,
+  HStack,
+  Icon,
+  Image,
+  Link,
+  Text,
+} from '@chakra-ui/react';
 import withAppear from '../../../HOC/withAppear';
 import useIsSmallScreen from '../../../hooks/useIsSmallScreen';
 import { SVG } from '../../../types';
-import {
-  Box,
-  Card,
-  CardBody,
-  CardFooter,
-  Heading,
-  Icon,
-  Text,
-  Button,
-  Link,
-  Image,
-  HStack,
-  Stack,
-  Flex,
-  useBreakpointValue,
-} from '@chakra-ui/react';
 
 interface ProjectItemProps {
   name: string;
@@ -38,6 +34,7 @@ const ProjectItem = ({
   const isSmallScreen = useIsSmallScreen();
   return (
     <Card
+      key={name}
       bg="gray.700"
       color="white"
       borderRadius="lg"
