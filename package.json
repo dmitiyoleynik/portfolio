@@ -7,9 +7,6 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
-    "@types/node": "^16.18.105",
-    "@types/react-scroll": "^1.8.10",
-    "@types/react-vertical-timeline-component": "^3.3.6",
     "framer-motion": "^11.3.31",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,7 +20,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "format": "prettier --write 'src/**/*.{js,ts,tsx,css,md}'"
   },
   "eslintConfig": {
     "extends": [
@@ -49,9 +49,14 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.105",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "eslint": "^9.9.0",
+    "@types/react-scroll": "^1.8.10",
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.29.1",

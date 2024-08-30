@@ -1,4 +1,6 @@
 import { Box, Flex } from '@chakra-ui/react';
+
+import { Navbar } from 'components/navbar';
 import {
   Contact,
   Education,
@@ -7,7 +9,6 @@ import {
   Projects,
   Skills,
 } from 'components/sections';
-import { Navbar } from 'components/navbar';
 
 function App() {
   return (

@@ -2,6 +2,7 @@ import { Flex, Heading } from '@chakra-ui/react';
 import { FaBriefcase } from 'react-icons/fa';
 import { Element } from 'react-scroll';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
+
 import 'react-vertical-timeline-component/style.min.css';
 import { experience } from 'appConstants';
 import VerticalTimeLineItem from 'components/general/verticalTimeline';

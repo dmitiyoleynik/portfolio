@@ -10,6 +10,7 @@ import {
   Link,
   Text,
 } from '@chakra-ui/react';
+
 import withAppear from 'HOC/withAppear';
 import useIsSmallScreen from 'hooks/useIsSmallScreen';
 import { SVG } from 'types';

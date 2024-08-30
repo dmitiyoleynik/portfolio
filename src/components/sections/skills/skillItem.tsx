@@ -1,6 +1,7 @@
 import { Box, Icon, Text } from '@chakra-ui/react';
-import { SVG } from 'types';
+
 import withAppear from 'HOC/withAppear';
+import { SVG } from 'types';
 
 interface SkillItemProps {
   label: string;

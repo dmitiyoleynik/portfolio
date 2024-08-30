@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
 import { motion, MotionProps, useInView } from 'framer-motion';
+import React, { useRef } from 'react';
 
 const withAppear = <P extends object>(
   WrappedComponent: React.ComponentType<P>

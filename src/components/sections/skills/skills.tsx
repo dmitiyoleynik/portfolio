@@ -1,5 +1,6 @@
 import { Box, Flex, Heading } from '@chakra-ui/react';
 import { Element } from 'react-scroll';
+
 import { skillsIcons } from 'appConstants';
 import SkillItem from 'components/sections/skills/skillItem';
 

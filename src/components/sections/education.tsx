@@ -1,8 +1,9 @@
 import { Flex, Heading } from '@chakra-ui/react';
 import { FaGraduationCap } from 'react-icons/fa';
+import { Element } from 'react-scroll';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Element } from 'react-scroll';
+
 import { educationData } from 'appConstants';
 import VerticalTimeLineItem from 'components/general/verticalTimeline';
 
