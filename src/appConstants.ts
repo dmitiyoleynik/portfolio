@@ -28,7 +28,6 @@ import { ReactComponent as StyledComponents } from 'assets/styledComponents.svg'
 import tmpPicture from 'assets/tmp.webp';
 import { ReactComponent as TypeScript } from 'assets/typeScript.svg';
 import { ReactComponent as Vite } from 'assets/vite.svg';
-import { Education } from 'types';
 
 export const skillsIcons = [
   { component: JavaScript, label: 'JavaScript' },
@@ -96,11 +95,12 @@ export const sectionsNames = [
   'Skills',
   'Projects',
   'Experience',
+  'Certificates',
   'Education',
   'Contact',
 ];
 
-export const educationData: Education[] = [
+export const education = [
   {
     degree: "Master's degree in Computer Science",
     institution: 'Dnipro University of Technology',
@@ -112,6 +112,30 @@ export const educationData: Education[] = [
     institution: 'Ukrainian State University of Science and Technologies',
     range: 'September 2015 - June 2019',
     description: 'Dnipro, Ukraine',
+  },
+];
+export const certificates = [
+  {
+    title:
+      'Flexible Methodologies of Developing Automated Configuration Management Systems',
+    issuingOrganization: 'SoftServe IT Academy',
+    issueDate: 'Completed',
+    description:
+      'Acquired knowledge and skills in developing automated configuration management systems using flexible methodologies, focusing on enhancing the efficiency and scalability of enterprise applications.',
+  },
+  {
+    title: 'JavaScript Software Development',
+    issuingOrganization: 'PrivatBank IT Academy',
+    issueDate: 'Completed',
+    description:
+      'Completed a comprehensive course on JavaScript software development, covering advanced topics such as asynchronous programming, modern frameworks, and best practices in web development.',
+  },
+  {
+    title: 'Advanced C++ and Low-Level Programming Plus Reverse Engineering',
+    issuingOrganization: 'Apriorit',
+    issueDate: 'Completed',
+    description:
+      'Specialized in advanced C++ programming techniques, low-level programming, and reverse engineering, with a focus on developing high-performance and secure software solutions.',
   },
 ];
 

@@ -1,15 +1,15 @@
 import { Flex, Heading } from '@chakra-ui/react';
-import { FaGraduationCap } from 'react-icons/fa';
+import { FaAward } from 'react-icons/fa';
 import { Element } from 'react-scroll';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { education } from 'appConstants';
+import { certificates } from 'appConstants';
 import VerticalTimeLineItem from 'components/general/verticalTimeline';
 
-const Education = () => {
+const Certificates = () => {
   return (
-    <Element name="Education">
+    <Element name="Certificates">
       <Flex
         as="section"
         bg="gray.800"
@@ -27,23 +27,25 @@ const Education = () => {
           mb={6}
           color="gray.200"
         >
-          My Education
+          My Certificates
         </Heading>
         <VerticalTimeline>
-          {education.map(({ degree, institution, range, description }) => (
-            <VerticalTimeLineItem
-              key={degree}
-              title={degree}
-              subtitle={institution}
-              description={description}
-              timeRange={range}
-              icon={<FaGraduationCap />}
-            />
-          ))}
+          {certificates.map(
+            ({ title, issuingOrganization, issueDate, description }) => (
+              <VerticalTimeLineItem
+                key={title}
+                title={title}
+                subtitle={issuingOrganization}
+                description={description}
+                timeRange={issueDate}
+                icon={<FaAward />}
+              />
+            )
+          )}
         </VerticalTimeline>
       </Flex>
     </Element>
   );
 };
 
-export default Education;
+export default Certificates;

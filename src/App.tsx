@@ -2,6 +2,7 @@ import { Box, Flex } from '@chakra-ui/react';
 
 import { Navbar } from 'components/navbar';
 import {
+  Certificates,
   Contact,
   Education,
   Experience,
@@ -19,6 +20,7 @@ function App() {
         <Skills />
         <Projects />
         <Experience />
+        <Certificates />
         <Education />
         <Contact />
       </Flex>
