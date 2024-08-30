@@ -9,6 +9,8 @@ import {
 } from '@chakra-ui/react';
 import { Element } from 'react-scroll';
 
+import CV from 'assets/Dmytro Oliinyk CV.pdf';
+
 const Contact = () => {
   return (
     <Element name="Contact">
@@ -24,13 +26,13 @@ const Contact = () => {
           </Text>
 
           <Stack spacing={4} width="100%" align="center">
-            <Link href="mailto:your-email@example.com" isExternal width="100%">
+            <Link href="mailto:dmitiyoleynik@gmail.com" isExternal width="100%">
               <Button size="lg" width="100%" bgColor="gray.300" variant="solid">
                 Email Me
               </Button>
             </Link>
             <Link
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/dmytro-oliinyk-452a5a199/"
               isExternal
               width="100%"
             >
@@ -38,12 +40,21 @@ const Contact = () => {
                 Connect on LinkedIn
               </Button>
             </Link>
-            <Link href="https://github.com/yourprofile" isExternal width="100%">
+            <Link
+              href="https://github.com/dmitiyoleynik"
+              isExternal
+              width="100%"
+            >
               <Button size="lg" width="100%" bgColor="gray.300" variant="solid">
                 Check My GitHub
               </Button>
             </Link>
-            <Link href="/path-to-your-cv.pdf" isExternal download width="100%">
+            <Link
+              href={CV}
+              isExternal
+              download="Dmytro_Oliinyk_CV.pdf"
+              width="100%"
+            >
               <Button size="lg" width="100%" bgColor="gray.300" variant="solid">
                 Download My CV
               </Button>
