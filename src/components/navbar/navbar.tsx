@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react';
-import { sectionsNames } from '../../constants';
-import useIsSmallScreen from '../../hooks/useIsSmallScreen';
-import StyledScrollLink from './navbarLink';
+import { sectionsNames } from 'appConstants';
+import useIsSmallScreen from 'hooks/useIsSmallScreen';
+import StyledScrollLink from 'components/navbar/navbarLink';
 
 const Navbar = () => {
   const isSmallScreen = useIsSmallScreen();

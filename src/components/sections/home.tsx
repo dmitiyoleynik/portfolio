@@ -1,8 +1,8 @@
 import { Button, Flex, Heading, HStack, Icon, Text } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Element } from 'react-scroll';
-import avatar from '../../assets/avatar.jpg';
-import CustomAvatar from '../general/сustomAvatar';
+import avatar from 'assets/avatar.jpg';
+import CustomAvatar from 'components/general/сustomAvatar';
 
 const Home = () => {
   return (

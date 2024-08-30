@@ -1,7 +1,7 @@
 import { Flex, Heading } from '@chakra-ui/react';
 import { Element } from 'react-scroll';
-import { projects } from '../../../constants';
-import ProjectItem from './projectItem';
+import { projects } from 'appConstants';
+import ProjectItem from 'components/sections/projects/projectItem';
 
 const Projects = () => {
   return (

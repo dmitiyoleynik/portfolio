@@ -6,8 +6,8 @@ import {
   Home,
   Projects,
   Skills,
-} from './components/sections';
-import { Navbar } from './components/navbar';
+} from 'components/sections';
+import { Navbar } from 'components/navbar';
 
 function App() {
   return (

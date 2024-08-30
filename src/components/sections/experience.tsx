@@ -3,8 +3,8 @@ import { FaBriefcase } from 'react-icons/fa';
 import { Element } from 'react-scroll';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { experience } from '../../constants';
-import VerticalTimeLineItem from '../general/verticalTimeline';
+import { experience } from 'appConstants';
+import VerticalTimeLineItem from 'components/general/verticalTimeline';
 
 const Experience = () => {
   return (
