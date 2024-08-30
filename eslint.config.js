@@ -48,6 +48,7 @@ module.exports = [
       ],
       '@typescript-eslint/no-unused-vars': 'error',
       'import/no-unresolved': 'error',
+      'no-magic-numbers': 'error',
     },
   },
 ];

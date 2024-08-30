@@ -25,9 +25,9 @@ const Skills = () => {
             justify="center"
             padding={{ base: '0 2rem', md: '0 4rem', xl: '0 8rem' }}
           >
-            {skillsIcons.map((skill, index) => (
+            {skillsIcons.map(skill => (
               <SkillItem
-                key={index}
+                key={skill.label}
                 label={skill.label}
                 component={skill.component}
               />

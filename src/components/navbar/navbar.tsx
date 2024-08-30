@@ -18,7 +18,7 @@ const Navbar = () => {
       borderRadius={isSmallScreen ? 'none' : 'full'}
       boxShadow="md"
       position="fixed"
-      top={isSmallScreen ? 0 : '1rem'}
+      top={isSmallScreen ? 'none' : '1rem'}
       left="50%"
       transform="translateX(-50%)"
       width={isSmallScreen ? '100%' : 'auto'}
