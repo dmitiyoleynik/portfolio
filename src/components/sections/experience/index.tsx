@@ -1,11 +1,11 @@
 import { Flex, Heading } from '@chakra-ui/react';
 import { FaBriefcase } from 'react-icons/fa';
+import { Element } from 'react-scroll';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import withAppear from '../../../HOC/withAppear';
 
 const dataForExp: CompanyProps[] = [
   {
@@ -40,36 +40,38 @@ interface CompanyProps {
 
 const Experience = () => {
   return (
-    <Flex
-      as="section"
-      bg="gray.800"
-      color="white"
-      align="center"
-      justify="center"
-      direction="column"
-      textAlign="center"
-    >
-      <Heading marginBottom="2rem" color="gray.200">
-        My Experience
-      </Heading>
-      <VerticalTimeline>
-        {dataForExp.map(({ position, company, description, range }) => (
-          <VerticalTimelineElement
-            key={company}
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: '#2D3748', color: '#E2E8F0' }}
-            contentArrowStyle={{ borderRight: '7px solid #2D3748' }}
-            date={range}
-            iconStyle={{ background: '#4A5568', color: '#E2E8F0' }}
-            icon={<FaBriefcase />}
-          >
-            <h3 className="vertical-timeline-element-title">{position}</h3>
-            <h4 className="vertical-timeline-element-subtitle">{company}</h4>
-            <p>{description}</p>
-          </VerticalTimelineElement>
-        ))}
-      </VerticalTimeline>
-    </Flex>
+    <Element name="Experience">
+      <Flex
+        as="section"
+        bg="gray.800"
+        color="white"
+        align="center"
+        justify="center"
+        direction="column"
+        textAlign="center"
+      >
+        <Heading marginBottom="2rem" color="gray.200">
+          My Experience
+        </Heading>
+        <VerticalTimeline>
+          {dataForExp.map(({ position, company, description, range }) => (
+            <VerticalTimelineElement
+              key={company}
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: '#2D3748', color: '#E2E8F0' }}
+              contentArrowStyle={{ borderRight: '7px solid #2D3748' }}
+              date={range}
+              iconStyle={{ background: '#4A5568', color: '#E2E8F0' }}
+              icon={<FaBriefcase />}
+            >
+              <h3 className="vertical-timeline-element-title">{position}</h3>
+              <h4 className="vertical-timeline-element-subtitle">{company}</h4>
+              <p>{description}</p>
+            </VerticalTimelineElement>
+          ))}
+        </VerticalTimeline>
+      </Flex>
+    </Element>
   );
 };
 

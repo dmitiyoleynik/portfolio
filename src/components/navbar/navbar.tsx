@@ -1,6 +1,7 @@
-import { Box, Flex } from '@chakra-ui/react';
-import { sectionsNames } from '../constants';
-import useIsSmallScreen from '../hooks/useIsSmallScreen';
+import { Flex } from '@chakra-ui/react';
+import { sectionsNames } from '../../constants';
+import useIsSmallScreen from '../../hooks/useIsSmallScreen';
+import StyledScrollLink from './navbarLink';
 
 const Navbar = () => {
   const isSmallScreen = useIsSmallScreen();
@@ -23,18 +24,18 @@ const Navbar = () => {
       zIndex="1000"
       wrap={isSmallScreen ? 'wrap' : 'nowrap'}
     >
-      {sectionsNames.map((section, index) => (
-        <Box
-          key={index}
-          padding="0.25rem 0.75rem"
-          fontSize="0.875rem"
-          borderRadius="full"
-          _hover={{ bg: 'gray.700', cursor: 'pointer' }}
-          transition="background-color 0.2s ease"
-          margin="0 0.5rem"
+      {sectionsNames.map(sectionName => (
+        <StyledScrollLink
+          key={sectionName}
+          to={sectionName}
+          smooth={true}
+          spy={true}
+          offset={-100}
+          duration={1000}
+          activeClass="active"
         >
-          {section}
-        </Box>
+          {sectionName}
+        </StyledScrollLink>
       ))}
     </Flex>
   );

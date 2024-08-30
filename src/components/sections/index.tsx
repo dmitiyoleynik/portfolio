@@ -1,21 +1,5 @@
-import ContactSection from './contact';
-import Education from './education';
-import Experience from './experience';
-import Home from './home';
-import Projects from './projects';
-import Skills from './skills';
-
-const Sections = () => {
-  return (
-    <>
-      <Home />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Education />
-      <ContactSection />
-    </>
-  );
-};
-
-export default Sections;
+export { default as Contact } from './contact';
+export { default as Experience } from './experience';
+export { default as Home } from './home';
+export { default as Projects } from './projects';
+export { default as Skills } from './skills';

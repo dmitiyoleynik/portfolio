@@ -1,11 +1,12 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
-import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
+import { Flex, Heading } from '@chakra-ui/react';
+import { FaGraduationCap } from 'react-icons/fa';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+import { Element } from 'react-scroll';
 const data: CompanyProps[] = [
   {
     position: 'Frontend & Mobile dev',
@@ -30,7 +31,7 @@ const data: CompanyProps[] = [
   },
 ];
 
-const educationData: EducationProps[] = [
+const educationData: Education[] = [
   {
     degree: 'Bachelor of Science in Computer Science',
     institution: 'University of Technology',
@@ -54,7 +55,7 @@ interface CompanyProps {
   range: string;
 }
 
-interface EducationProps {
+interface Education {
   degree: string;
   institution: string;
   description: string;
@@ -63,45 +64,47 @@ interface EducationProps {
 
 const Education = () => {
   return (
-    <Flex
-      as="section"
-      bg="gray.800"
-      color="white"
-      align="center"
-      justify="center"
-      direction="column"
-      textAlign="center"
-    >
-      <Heading
-        as="h2"
-        size="xl"
+    <Element name="Education">
+      <Flex
+        as="section"
+        bg="gray.800"
+        color="white"
+        align="center"
+        justify="center"
+        direction="column"
         textAlign="center"
-        mt={10}
-        mb={6}
-        color="gray.200"
       >
-        Education
-      </Heading>
-      <VerticalTimeline>
-        {educationData.map(({ degree, institution, description, range }) => (
-          <VerticalTimelineElement
-            key={institution}
-            className="vertical-timeline-element--education"
-            contentStyle={{ background: '#2D3748', color: '#E2E8F0' }}
-            contentArrowStyle={{ borderRight: '7px solid #2D3748' }}
-            date={range}
-            iconStyle={{ background: '#4A5568', color: '#E2E8F0' }}
-            icon={<FaGraduationCap />}
-          >
-            <h3 className="vertical-timeline-element-title">{degree}</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              {institution}
-            </h4>
-            <p>{description}</p>
-          </VerticalTimelineElement>
-        ))}
-      </VerticalTimeline>
-    </Flex>
+        <Heading
+          as="h2"
+          size="xl"
+          textAlign="center"
+          mt={10}
+          mb={6}
+          color="gray.200"
+        >
+          Education
+        </Heading>
+        <VerticalTimeline>
+          {educationData.map(({ degree, institution, description, range }) => (
+            <VerticalTimelineElement
+              key={degree}
+              className="vertical-timeline-element--education"
+              contentStyle={{ background: '#2D3748', color: '#E2E8F0' }}
+              contentArrowStyle={{ borderRight: '7px solid #2D3748' }}
+              date={range}
+              iconStyle={{ background: '#4A5568', color: '#E2E8F0' }}
+              icon={<FaGraduationCap />}
+            >
+              <h3 className="vertical-timeline-element-title">{degree}</h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                {institution}
+              </h4>
+              <p>{description}</p>
+            </VerticalTimelineElement>
+          ))}
+        </VerticalTimeline>
+      </Flex>
+    </Element>
   );
 };
 

@@ -1,12 +1,22 @@
-import Navbar from './components/navbar';
-import Sections from './components/sections';
+import { Box, Flex } from '@chakra-ui/react';
+import Navbar from './components/navbar/navbar';
+import { Experience, Home, Projects, Skills } from './components/sections';
+import Contact from './components/sections/contact';
+import Education from './components/sections/education';
 
 function App() {
   return (
-    <div>
+    <Box>
       <Navbar />
-      <Sections />
-    </div>
+      <Flex bg="gray.800" direction="column" gap={'6rem'}>
+        <Home />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
+        <Contact />
+      </Flex>
+    </Box>
   );
 }
 

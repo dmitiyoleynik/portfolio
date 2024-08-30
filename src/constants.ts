@@ -89,6 +89,7 @@ export const projects = [
     screenshot: tmpPicture,
   },
 ];
+
 export const sectionsNames = [
   'Home',
   'Skills',
@@ -96,4 +97,4 @@ export const sectionsNames = [
   'Experience',
   'Education',
   'Contact',
-];
+] as const;
