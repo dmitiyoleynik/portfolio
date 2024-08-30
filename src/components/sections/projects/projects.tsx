@@ -20,7 +20,26 @@ const Projects = () => {
           My Projects
         </Heading>
         <Flex width="100%" direction="column" gap="4rem" paddingBottom="2rem">
-          {projects.map(ProjectItem)}
+          {projects.map(
+            ({
+              name,
+              techStack,
+              description,
+              demoLink,
+              githubLink,
+              screenshot,
+            }) => (
+              <ProjectItem
+                key={name}
+                name={name}
+                techStack={techStack}
+                description={description}
+                demoLink={demoLink}
+                githubLink={githubLink}
+                screenshot={screenshot}
+              />
+            )
+          )}
         </Flex>
       </Flex>
     </Element>

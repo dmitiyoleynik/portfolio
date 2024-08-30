@@ -15,7 +15,6 @@ const withAppear = <P extends object>(
         initial={{ opacity: 0, y: 50 }}
         animate={animate}
         transition={{ duration: 0.5, ease: 'easeInOut' }}
-        {...props}
       >
         <WrappedComponent {...props} />
       </motion.div>
