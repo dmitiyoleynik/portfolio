@@ -3,7 +3,7 @@ import { FaBriefcase } from 'react-icons/fa';
 import { Element } from 'react-scroll';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { dataForExp } from '../../constants';
+import { experience } from '../../constants';
 import VerticalTimeLineItem from '../general/verticalTimeline';
 
 const Experience = () => {
@@ -22,7 +22,7 @@ const Experience = () => {
           My Experience
         </Heading>
         <VerticalTimeline>
-          {dataForExp.map(({ position, company, description, range }) => (
+          {experience.map(({ position, company, description, range }) => (
             <VerticalTimeLineItem
               key={company}
               title={position}

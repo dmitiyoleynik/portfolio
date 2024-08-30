@@ -8,12 +8,12 @@ export interface ItemProps {
   timeRange: string;
   icon: React.ReactNode;
 }
-//TODO: rename late
-const grayColor = '#2D3748';
-const whiteColor = '#E2E8F0';
-const iconBackground = '#4A5568';
 
-const VerticalTimeLineItem = ({
+const backgroundColor = '#2D3748';
+const textColor = '#E2E8F0';
+const iconBgColor = '#4A5568';
+
+const VerticalTimelineItem = ({
   title,
   subtitle,
   description,
@@ -23,10 +23,10 @@ const VerticalTimeLineItem = ({
   <VerticalTimelineElement
     key={title}
     className="vertical-timeline-element--education"
-    contentStyle={{ background: grayColor, color: whiteColor }}
-    contentArrowStyle={{ borderRight: `7px solid ${grayColor}` }}
+    contentStyle={{ background: backgroundColor, color: textColor }}
+    contentArrowStyle={{ borderRight: `7px solid ${backgroundColor}` }}
     date={timeRange}
-    iconStyle={{ background: iconBackground, color: whiteColor }}
+    iconStyle={{ background: iconBgColor, color: textColor }}
     icon={icon}
   >
     <h3 className="vertical-timeline-element-title">{title}</h3>
@@ -35,4 +35,4 @@ const VerticalTimeLineItem = ({
   </VerticalTimelineElement>
 );
 
-export default VerticalTimeLineItem;
+export default VerticalTimelineItem;
